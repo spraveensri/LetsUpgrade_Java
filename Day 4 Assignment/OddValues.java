@@ -1,25 +1,20 @@
 package com.javacode;
 
-import java.util.Scanner;
-
 public class OddValues {
 
 	public static void main(String[] args) {
+		int num[]= {12,21,33,44,57};
 		
-		Scanner sc=new Scanner(System.in);
-		int[] num=new int[5];
-		for(int i=0;i<5;i++)
+		System.out.println("Odd numbers:");
+		
+		for(int i=0;i<num.length;i++)
 		{
-			int n=i+1;
-			System.out.println("Enter number "+n+" : ");
-			num[i]=sc.nextInt();	
+			if(num[i]%2!=0) 
+			{
+				System.out.println(num[i]);
+			}
 		}
-		int sum=0;
-		for (int i=0;i<num.length;i++) 
-		{  
-	           sum=sum+num[i];  
-	    }  
-	    System.out.println("\nSum of all the values : " +sum);  
 	}
-
 }
+
+
